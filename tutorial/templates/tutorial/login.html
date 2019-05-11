@@ -1,0 +1,10 @@
+{% extends 'tutorial/base.html' %}
+{% block RegisterLogin %}
+  <form  method="post">
+     {% csrf_token %}
+     {{form.as_p}}
+     <button type="submit" style="background:#ee6e73; text:white;" class="btn" ><strong>login</strong></button>
+  </form>
+
+  if you dont have account <a href="register/"><strong>register</strong></a>
+ {% endblock %}

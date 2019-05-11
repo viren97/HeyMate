@@ -1,0 +1,17 @@
+<div class="nav-fixed">
+  <nav >
+   <div class="nav-wrapper">
+     <a href="/" class="brand-logo "><strong>hey!mate</strong></a>
+     <ul class="right ">
+       <li><a href="/">Home</a></li>
+       {% if user.is_authenticated %}
+       <li><a href="account/">{{user.username}}</a></li>
+       <li><a href="logout/">Logout</a></li>
+       {% else %}
+       <li><a href="login/">Login</a></li>
+       <li><a href="register/">Register</a></li>
+       {%endif%}
+     </ul>
+   </div>
+  </nav>
+</div>

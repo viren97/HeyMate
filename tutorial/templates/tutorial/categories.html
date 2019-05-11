@@ -1,0 +1,17 @@
+{% extends "tutorial/base.html" %}
+{% block content %}
+  <div class="row">
+    {% for tut,partone in part_ones.items %}
+    <div class="col s12 m6 l4">
+    <a href="{{partone}}" style="color:#000">
+      <div class="card  hoverable ">
+        <div class="card-content black-text">
+          <span class="card-title">{{tut.tutorial_series}}</span>
+          <p>{{tut.series_summary}}</p>
+        </div>
+      </div>
+      </a>
+    </div>
+      {% endfor %}
+  </div>
+{% endblock %}

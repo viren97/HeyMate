@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   {% load static %}
+    <link rel="stylesheet" href="{% static 'tinymce/css/prism.css' %}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{% static 'tutorial/css/materialize.css' %}">
+  <title>hey!mate</title>
+  </head>
+  <body>
+
+  {% include 'tutorial/includes/nav.html' %}
+
+
+       {% block content %}
+       {% endblock %}
+    <div class="container">
+      {% block RegisterLogin %}
+      {% endblock %}
+    </div>
+      {% include 'tutorial/includes/message.html' %}
+
+
+
+
+
+    <script src="{% static 'tinymce/js/prism.js' %}"> </script>
+    <script src="{% static 'tutorial/js/materialize.js' %}"></script>
+    <script>
+      M.AutoInit();
+    </script>
+
+  </body>
+</html>
