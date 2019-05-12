@@ -58,7 +58,6 @@ TINYMCE_DEFAULT_CONFIG = {
     'statusbar': True,
     }
 INSTALLED_APPS = [
-    'todoapp.apps.TodoappConfig',
     'tutorial.apps.TutorialConfig',
     'django.contrib.admin',
     'django.contrib.auth',
